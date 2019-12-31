@@ -12,3 +12,5 @@ print (Fore.GREEN + "[*] You logged in Successfully")
 while True:
     server.sendmail(ymail, rmail, message)
     print (Fore.CYAN + "[===>] Email sent to: ", rmail)
+    except SMTPAuthenticationError:
+       print(Fore.RED + "ERROR [!]")
