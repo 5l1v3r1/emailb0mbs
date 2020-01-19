@@ -1,8 +1,8 @@
-import  smtplib
+import  smtplib, getpass
 from colorama import Fore
 ymail = input(Fore.RED + "Please write down your email: ")
 rmail = input("Please write down the victim's email: ")
-passwd = input(str("Please write down your password: ")
+passwd = getpass.getpass("Please write down your password: ")
 message = input("Message: ")
 server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
